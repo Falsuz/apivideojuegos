@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Videojuegos</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/styles.css')}}">
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Videojuegos</h1>
+        <ul>
+            {% for videojuego in videojuegos['videojuegos'] %}
+            <li>
+                <strong>Título:</strong> {{ videojuego['titulo'] }}<br>
+                <strong>Desarrollador:</strong> {{ videojuego['desarrollador'] }}<br>
+                <strong>Año de lanzamiento:</strong> {{ videojuego['anio_lanzamiento'] }}<br>
+                <strong>Plataforma:</strong> {{ videojuego['plataforma'] }}<br>
+                <strong>Clasificación:</strong> {{ videojuego['clasificacion'] }}<br>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>

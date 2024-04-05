@@ -11,8 +11,41 @@ videojuegos = [
         "anio_lanzamiento": 1985,
         "plataforma": "Nintendo Entertainment System",
         "clasificacion": "E (Everyone)"
+    },
+    {
+        "id": 2,
+        "titulo": "The Legend of Zelda: Ocarina of Time",
+        "desarrollador": "Nintendo",
+        "anio_lanzamiento": 1998,
+        "plataforma": "Nintendo 64",
+        "clasificacion": "E (Everyone)"
+    },
+    {
+        "id": 3,
+        "titulo": "Final Fantasy VII",
+        "desarrollador": "Square Enix",
+        "anio_lanzamiento": 1997,
+        "plataforma": "PlayStation",
+        "clasificacion": "T (Teen)"
+    },
+    {
+        "id": 4,
+        "titulo": "The Elder Scrolls V: Skyrim",
+        "desarrollador": "Bethesda Game Studios",
+        "anio_lanzamiento": 2011,
+        "plataforma": "PC, PlayStation 3, Xbox 360",
+        "clasificacion": "M (Mature)"
+    },
+    {
+        "id": 5,
+        "titulo": "Grand Theft Auto V",
+        "desarrollador": "Rockstar North",
+        "anio_lanzamiento": 2013,
+        "plataforma": "PC, PlayStation 3, PlayStation 4, Xbox 360, Xbox One",
+        "clasificacion": "M (Mature)"
     }
 ]
+
 
 # Ruta para obtener todos los videojuegos
 @app.route('/api/videojuegos', methods=['GET'])
