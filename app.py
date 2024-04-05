@@ -38,7 +38,7 @@ videojuegos = [
         "anio_lanzamiento": 2011,
         "plataforma": "PC, PlayStation 3, Xbox 360",
         "clasificacion": "M (Mature)",
-        "url": "URL_DEL_JUEGO"
+        "url": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fm.imdb.com%2Ftitle%2Ftt1814884%2Fmediaviewer%2Frm778924288&psig=AOvVaw1N5x17xNv-fHRlloQcPpFz&ust=1712440566881000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCJjv07KIrIUDFQAAAAAdAAAAABAE"
     },
     {
         "id": 5,
@@ -47,7 +47,7 @@ videojuegos = [
         "anio_lanzamiento": 2013,
         "plataforma": "PC, PlayStation 3, PlayStation 4, Xbox 360, Xbox One",
         "clasificacion": "M (Mature)",
-        "url": "URL_DEL_JUEGO"
+        "url": "https://m.media-amazon.com/images/I/916T5H6sCtL.jpg"
     }
 ]
 
