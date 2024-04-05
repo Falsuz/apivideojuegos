@@ -11,6 +11,7 @@ videojuegos = [
         "anio_lanzamiento": 1985,
         "plataforma": "Nintendo Entertainment System",
         "clasificacion": "E (Everyone)"
+        "url": "https://i.blogs.es/638318/super_mario_bros_logo/450_1000.webp"
     },
     {
         "id": 2,
@@ -19,6 +20,7 @@ videojuegos = [
         "anio_lanzamiento": 1998,
         "plataforma": "Nintendo 64",
         "clasificacion": "E (Everyone)"
+        "url": "https://upload.wikimedia.org/wikipedia/en/5/57/The_Legend_of_Zelda_Ocarina_of_Time.jpg"
     },
     {
         "id": 3,
@@ -27,6 +29,7 @@ videojuegos = [
         "anio_lanzamiento": 1997,
         "plataforma": "PlayStation",
         "clasificacion": "T (Teen)"
+        "url": "https://upload.wikimedia.org/wikipedia/en/c/c2/Final_Fantasy_VII_Box_Art.jpg"
     },
     {
         "id": 4,
