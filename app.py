@@ -10,7 +10,7 @@ videojuegos = [
         "desarrollador": "Nintendo",
         "anio_lanzamiento": 1985,
         "plataforma": "Nintendo Entertainment System",
-        "clasificacion": "E (Everyone)"
+        "clasificacion": "E (Everyone)",
         "url": "https://i.blogs.es/638318/super_mario_bros_logo/450_1000.webp"
     },
     {
@@ -19,7 +19,7 @@ videojuegos = [
         "desarrollador": "Nintendo",
         "anio_lanzamiento": 1998,
         "plataforma": "Nintendo 64",
-        "clasificacion": "E (Everyone)"
+        "clasificacion": "E (Everyone)",
         "url": "https://upload.wikimedia.org/wikipedia/en/5/57/The_Legend_of_Zelda_Ocarina_of_Time.jpg"
     },
     {
@@ -28,7 +28,7 @@ videojuegos = [
         "desarrollador": "Square Enix",
         "anio_lanzamiento": 1997,
         "plataforma": "PlayStation",
-        "clasificacion": "T (Teen)"
+        "clasificacion": "T (Teen)",
         "url": "https://upload.wikimedia.org/wikipedia/en/c/c2/Final_Fantasy_VII_Box_Art.jpg"
     },
     {
@@ -37,7 +37,8 @@ videojuegos = [
         "desarrollador": "Bethesda Game Studios",
         "anio_lanzamiento": 2011,
         "plataforma": "PC, PlayStation 3, Xbox 360",
-        "clasificacion": "M (Mature)"
+        "clasificacion": "M (Mature)",
+        "url": "URL_DEL_JUEGO"
     },
     {
         "id": 5,
@@ -45,10 +46,10 @@ videojuegos = [
         "desarrollador": "Rockstar North",
         "anio_lanzamiento": 2013,
         "plataforma": "PC, PlayStation 3, PlayStation 4, Xbox 360, Xbox One",
-        "clasificacion": "M (Mature)"
+        "clasificacion": "M (Mature)",
+        "url": "URL_DEL_JUEGO"
     }
 ]
-
 
 # Ruta para obtener todos los videojuegos
 @app.route('/api/videojuegos', methods=['GET'])
@@ -73,7 +74,7 @@ def agregar_videojuego():
 
 @app.route('/')
 def index():
-    return('api videojuegos')
+    return 'api videojuegos'
 
 if __name__ == '__main__':
     app.run(debug=True)
