@@ -1,48 +1,21 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ videojuego['titulo'] }}</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-</head>
-<body>
-    <div class="container">
-        <h1>{{ videojuego['titulo'] }}</h1>
-        <ul>
-            <li>
-                <strong>Desarrollador:</strong> {{ videojuego['desarrollador'] }}<br>
-                <strong>Año de lanzamiento:</strong> {{ videojuego['anio_lanzamiento'] }}<br>
-                <strong>Plataforma:</strong> {{ videojuego['plataforma'] }}<br>
-                <strong>Clasificación:</strong> {{ videojuego['clasificacion'] }}<br>
-                <img src="{{ videojuego['url'] }}" alt="{{ videojuego['titulo'] }}" style="max-width: 400px;">
-            </li>
-        </ul>
-        <a href="/">Volver a la página principal</a> 
-    </div>
-</body>
-</html> -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ videojuego['titulo'] }}</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles2.css') }}">
 </head>
 <body>
     <div class="container">
         <h1>{{ videojuego['titulo'] }}</h1>
-        <ul>
-            <li>
-                <strong>Desarrollador:</strong> {{ videojuego['desarrollador'] }}<br>
-                <strong>Año de lanzamiento:</strong> {{ videojuego['anio_lanzamiento'] }}<br>
-                <strong>Plataforma:</strong> {{ videojuego['plataforma'] }}<br>
-                <strong>Clasificación:</strong> {{ videojuego['clasificacion'] }}<br>
-                <img src="{{ videojuego['urlImagen'] }}" alt="{{ videojuego['titulo'] }}" style="max-width: 400px;">
-            </li>
-        </ul>
+        <div class="videojuego-info">
+            <strong>Desarrollador:</strong> {{ videojuego['desarrollador'] }}<br>
+            <strong>Año de lanzamiento:</strong> {{ videojuego['anio_lanzamiento'] }}<br>
+            <strong>Plataforma:</strong> {{ videojuego['plataforma'] }}<br>
+            <strong>Clasificación:</strong> {{ videojuego['clasificacion'] }}<br>
+            <img src="{{ videojuego['urlImagen'] }}" alt="{{ videojuego['titulo'] }}" class="imagen-videojuego">
+        </div>
         <a href="/">Volver a la página principal</a> <!-- Agrega el botón -->
     </div>
 </body>

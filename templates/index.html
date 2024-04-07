@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,46 +9,34 @@
 <body>
     <div class="container">
         <h1>Lista de Videojuegos</h1>
-        <ul>
-            {% for videojuego in videojuegos['videojuegos'] %}
-            <li>
-                <strong>Título:</strong> {{ videojuego['titulo'] }}<br>
-                <strong>Desarrollador:</strong> {{ videojuego['desarrollador'] }}<br>
-                <strong>Año de lanzamiento:</strong> {{ videojuego['anio_lanzamiento'] }}<br>
-                <strong>Plataforma:</strong> {{ videojuego['plataforma'] }}<br>
-                <strong>Clasificación:</strong> {{ videojuego['clasificacion'] }}<br>
-                <img src="{{ videojuego['url'] }}" alt="{{ videojuego['titulo'] }}" style="max-width: 200px;">
-            </li>
-            {% endfor %}
-        </ul>
-    </div>
-</body>
-</html> 
- -->
-
- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Videojuegos</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-</head>
-<body>
-    <div class="container">
-        <h1>Lista de Videojuegos</h1>
-        <ul>
+        <ul class="videojuegos-list">
             {% for videojuego in videojuegos %}
             <li>
-                <strong>Título:</strong> {{ videojuego['titulo'] }}<br>
-                <strong>Desarrollador:</strong> {{ videojuego['desarrollador'] }}<br>
-                <strong>Año de lanzamiento:</strong> {{ videojuego['anio_lanzamiento'] }}<br>
-                <strong>Plataforma:</strong> {{ videojuego['plataforma'] }}<br>
-                <strong>Clasificación:</strong> {{ videojuego['clasificacion'] }}<br>
-                <img src="{{ videojuego['urlImagen'] }}" alt="{{ videojuego['titulo'] }}" style="max-width: 200px;">
+                <div class="videojuego-info">
+                    <h2>{{ videojuego['titulo'] }}</h2>
+                    <p><strong>Desarrollador:</strong> {{ videojuego['desarrollador'] }}</p>
+                    <p><strong>Año de lanzamiento:</strong> {{ videojuego['anio_lanzamiento'] }}</p>
+                    <p><strong>Plataforma:</strong> {{ videojuego['plataforma'] }}</p>
+                    <p><strong>Clasificación:</strong> {{ videojuego['clasificacion'] }}</p>
+                </div>
+                <div class="videojuego-img-container">
+                    <img src="{{ videojuego['urlImagen'] }}" alt="{{ videojuego['titulo'] }}" class="videojuego-img" data-id="{{ videojuego['id'] }}">
+                </div>
             </li>
             {% endfor %}
         </ul>
     </div>
+
+    <script>
+        // Agregar evento de clic a cada imagen de videojuego
+        document.querySelectorAll('.videojuego-img').forEach(function(img) {
+            img.addEventListener('click', function() {
+                // Obtener el ID del videojuego del atributo data
+                var videojuegoId = this.getAttribute('data-id');
+                // Redirigir a la página de detalles del videojuego
+                window.location.href = '/videojuego/' + videojuegoId;
+            });
+        });
+    </script>
 </body>
 </html>

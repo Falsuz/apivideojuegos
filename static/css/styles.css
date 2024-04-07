@@ -1,8 +1,32 @@
-/* Reset de estilos */
-body,
-ul {
-    margin: 0;
+/* .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+} */
+
+.videojuegos-list {
+    list-style: none;
     padding: 0;
+}
+
+.videojuegos-list li {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.videojuego-info {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.videojuego-img-container {
+    flex: 1;
+}
+
+.videojuego-img {
+    max-width: 200px;
+    height: auto;
+    cursor: pointer;
 }
 
 body {
@@ -10,10 +34,29 @@ body {
     background-color: #3c3c3c;
 }
 
-.container {
-    max-width: 800px;
-    margin: 20px auto;
+body,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+.videojuego-info {
+    background-color: #f9f9f9;
     padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+strong {
+    font-weight: bold;
+}
+
+a {
+    color: rgba(249, 249, 249, 0.8); /* Color con transparencia */
+}
+
+a:hover {
+    color: darkred;
 }
 
 h1 {
@@ -22,38 +65,9 @@ h1 {
     color: #f0f0f0; /* Morado */
 }
 
-ul {
-    list-style-type: none;
-}
-
-li {
-    background-color: #f9f9f9;
-    margin-bottom: 20px;
+.container {
+    max-width: 800px;
+    margin: 20px auto;
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
 }
 
-li:hover {
-    background-color: #f0f0f0;
-}
-
-strong {
-    font-weight: bold;
-}
-
-img {
-    max-width: 200px;
-    display: block; 
-    margin: 10px auto; /* Alinear las imágenes en el centro */
-}
-
-a {
-    color: rgba(249, 249, 249, 0.8); /* Color con transparencia */
-}
-
-
-a:hover {
-    color: darkred;
-}
