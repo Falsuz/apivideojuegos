@@ -8,12 +8,14 @@
 </head>
 <body>
     <div class="container">
-        <h1>Lista de Videojuegos</h1>
+        <h1>VIDEOJUEGOS</h1>
+        <h3>Arquitectura de computadoras: segunda evaluación</h3>
         <ul class="videojuegos-list">
             {% for videojuego in videojuegos %}
             <li>
                 <div class="videojuego-info">
                     <h2>{{ videojuego['titulo'] }}</h2>
+                    <hr>
                     <p><strong>Desarrollador:</strong> {{ videojuego['desarrollador'] }}</p>
                     <p><strong>Año de lanzamiento:</strong> {{ videojuego['anio_lanzamiento'] }}</p>
                     <p><strong>Plataforma:</strong> {{ videojuego['plataforma'] }}</p>
